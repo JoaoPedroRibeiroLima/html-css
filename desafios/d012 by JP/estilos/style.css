@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Passion+One:wght@700&family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+    height: 250px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1{
+    color: white;
+    font-family: 'passion one';
+    font-weight: lighter;
+    font-size: 7em;
+}
+
+.texto-centro{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#juaninha{
+    background-image: url('../imagens/background001.jpg');
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 7px 7px 10px rgba(0, 0, 0, 0.26);
+}
+
+#pagina{
+    height: 800px;
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 7px 7px 10px rgba(0, 0, 0, 0.26);
+}
+
+.fundo{
+    background-color: rgba(0, 0, 0, 0.416);
+    color: white;
+    max-width: 570px;
+    box-sizing: content-box;
+    margin-top: 10px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.509);
+    
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main p{
+    font-size: 2.7em;
+    line-height: 2em;
+    font-family: 'Sriracha';
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 50px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+}
+
+footer a{
+    font-weight: bolder;
+}
