@@ -12,21 +12,19 @@
 
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
-            border: 5px solid red;
         }
 
         td{
             padding: 8px;
             border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
         }
 
-        tr.linha{
-            background-color: gray;
-        }
-
-        td.dado{
-            background-color: yellow;
+        .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -51,33 +49,24 @@
         </tr>
 
         <!-- 2º linha -->
-        <tr class="linha">
+        <tr>
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
 
         <!-- 3º linha -->
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
 
         <!-- 4º linha -->
         <tr>
             <td>A4</td>
-            <td class="dado">B4</td>
+            <td>B4</td>
             <td>C4</td>
-        </tr>
-
-        <tr>
-            <td>A5</td>
-            <td>B5</td>
-        </tr>
-
-        <tr>
-            <td>A6</td>
         </tr>
     </table>
 </body>
