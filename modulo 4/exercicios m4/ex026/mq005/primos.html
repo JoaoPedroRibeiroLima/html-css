@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom, purple, blue);
+            height: 100vh;
+            background-size: contain;
+        }
+
+        main {
+            background-color: white;
+            min-height: 500px;
+            width: 400px;
+            padding: 30px;
+            border-radius: 20px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Gerador de primos</h1>
+        <p>por favor digite o número de teto...</p>
+        <form action="pohanenhuma.php" method="post" autocomplete="off">
+            <label for="inum">Número: </label>
+            <input type="number" name="num" id="inum" >
+            <input type="button" value="Analisar" onclick="primar()">
+            <p>
+                <output id="saída"></output>
+            </p>    
+        </form>
+    </main>
+    <script>
+        function primar() {
+            var numtxt = document.getElementById('inum')
+            var num = Number(numtxt.value)
+            var saida = document.getElementById('saída')
+            saida.innerText = ''
+
+            //analisa cada número
+            for(var vez = 1;vez <= num;vez++) {
+                var totaldediv = 0
+
+                //analisa todos as possiveis divisões com aquele número
+                for (var cont = 0;cont <= vez;cont++) {
+                    if (vez % cont == 0) {
+                        totaldediv += 1
+                    }
+                }
+                if (vez == 1) {
+                    console.log('primeira vez')
+                } else {
+                    if (totaldediv <= 2) {
+                        saida.innerText += ` ${vez} 👉`
+                    }
+                    if (vez == 3301) {
+                        saida.innerText += `🦗`
+                    }
+                }
+            }
+            saida.innerText += '🏁'
+        }
+    </script>
+</body>
+</html>
